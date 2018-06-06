@@ -10,3 +10,5 @@ inherit_from:
   # For a project using rspec
   - https://raw.githubusercontent.com/jmschneider/ruby-style-guide/master/rspec.yml 
 ```
+
+You may also want to add `.rubocop-*` to your `.gitignore` file.
