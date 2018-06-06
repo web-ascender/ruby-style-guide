@@ -11,4 +11,7 @@ inherit_from:
   - https://raw.githubusercontent.com/jmschneider/ruby-style-guide/master/rspec.yml 
 ```
 
-You may also want to add `.rubocop-*` to your `.gitignore` file.
+## Other Recommendations
+
+- Add `.rubocop-*` to your `.gitignore` file
+- Set up [overcommit](https://github.com/brigade/overcommit) with a [pre-commit-hook](http://rubocop.readthedocs.io/en/latest/integration_with_other_tools/#git-pre-commit-hook-integration) for rubocop
