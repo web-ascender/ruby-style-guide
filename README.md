@@ -14,4 +14,5 @@ inherit_from:
 ## Other Recommendations
 
 - Add `.rubocop-*` to your `.gitignore` file
+- For legacy projects, run `rubocop --auto-gen-config` and add `.rubocop_todo.yml` to the `inherit_from` list in `.rubocop.yml`
 - Set up [overcommit](https://github.com/brigade/overcommit) with a [pre-commit-hook](http://rubocop.readthedocs.io/en/latest/integration_with_other_tools/#git-pre-commit-hook-integration) for rubocop
