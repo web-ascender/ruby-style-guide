@@ -1,5 +1,5 @@
 inherit_from:
-  - ./ruby.yml
+  - https://raw.githubusercontent.com/jmschneider/ruby-style-guide/master/ruby.yml
 
 Rails:
   Enabled: true
