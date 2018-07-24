@@ -19,12 +19,41 @@ inherit_from:
 
 ### VS Code
 
-If you are using VS Code with the [ruby extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby), the following settings can be used to have rubocop auto-format files whenever you save them:
+#### Linter
+
+For VS Code, it is strongly recommended to use the [ruby extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby). At a miniumum, I recommend adding the following to your global settings:
 
 ```
+"ruby.lint": {
+    "rubocop": true,
+    "ruby": true
+}
+```
+
+#### Formatting
+
+The ruby extension can also be configured to have rubocop auto-format files whenever you save them. I recommend enabling this on a project by project basis by adding the following to your workspace settings:
+
+```
+"ruby.format": "rubocop",
 "[ruby]": {
-  "editor.formatOnSaveTimeout": 2000,
-  "editor.formatOnSave": true
-},
-"ruby.format": "rubocop"
+    "editor.formatOnSaveTimeout": 2000,
+    "editor.formatOnSave": true
+}
+```
+
+#### Intellisense
+
+Ruby intellisense can be enabled by installing the npm `ruby-method-locate` package. You will need to run `npm i -g ruby-method-locate` from the command line and then add the following to your global settings:
+
+```
+"ruby.intellisense": "rubyLocate"
+```
+
+#### Autocomplete
+
+Ruby autocompletion can be enabled with the `rcodetools` gem. You will need to run `gem install rcodetools` from within the correct version of ruby and add the following to your global settings:
+
+```
+"ruby.codeCompletion": "rcodetools"
 ```
