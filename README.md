@@ -19,9 +19,11 @@ inherit_from:
 
 ### VS Code
 
+For VS Code, it is strongly recommended to use the [ruby extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby).
+
 #### Linter
 
-For VS Code, it is strongly recommended to use the [ruby extension](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby). At a miniumum, I recommend adding the following to your global settings:
+At a miniumum, I recommend adding the following to your global settings to enable the rubocop linter:
 
 ```
 "ruby.lint": {
